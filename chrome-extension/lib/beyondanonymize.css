@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "BeyondAnonymize";
+  src: url("/lib/beyondanonymize.woff2") format("woff2"),url("/lib/beyondanonymize.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeyondAnonymize Monospace";
+  src: url("/lib/beyondanonymize-monospace.woff2") format("woff2"),
+    url("/lib/beyondanonymize-monospace.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.beyondanonymize div[class^='title--'], .beyondanonymize tbody tr *, .beyondanonymize div[class^='title--'], .beyondanonymize div .edit-container *,  .beyondanonymize div[role=heading] .ms-navbar-node-caption * {
+  font-family: "BeyondAnonymize" !important;
+  background-image: none !important;
+}
+
+.beyondanonymize span[class='synopsis-trigger'] {
+  font-family: "Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif !important;
+}
+
+.beyondanonymize p[class^='staticstringcontrol'] {
+  font-family: "Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif !important;
+}
+
+.beyondanonymize .edit-container.ms-nav-editcontrol-nocaption a.stringcontrol-read {
+  font-family: "Segoe UI","Segoe WP",Segoe,device-segoe,Tahoma,Helvetica,Arial,sans-serif !important;
+  font-weight: bold !important;
+}
+
+pre.beyondanonymize,
+pre.beyondanonymize *,
+.beyondanonymize pre *,
+code.beyondanonymize,
+code.beyondanonymize *,
+.beyondanonymize code * {
+  font-family: "BeyondAnonymize Monospace" !important;
+}

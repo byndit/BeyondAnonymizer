@@ -1,0 +1,40 @@
+{
+  "name": "BeyondAnonymizer",
+  "version": "1.0.0",
+  "description": "Turn your bc website into an anonymized frame for demo and documentation purposes.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": "icon16.png",
+    "default_title": "beyondanonymizer"
+  },  
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "minimum_chrome_version": "93",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["lib/beyondanonymize.css"]
+    }],  
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "lib/beyondanonymize.css",
+        "lib/*"
+      ],
+      "matches": ["*://*/*"],
+      "use_dynamic_url": false
+    }
+  ],
+  "manifest_version": 3
+}
